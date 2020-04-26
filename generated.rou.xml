@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Wed Apr 22 10:51:49 2020 by Eclipse SUMO duarouter Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="network.net.xml"/>
+        <route-files value="generated.trips.rou.xml"/>
+    </input>
+
+    <output>
+        <output-file value="generated.rou.xml"/>
+        <alternatives-output value="generated.rou.alt.xml"/>
+    </output>
+
+    <random_number>
+        <random value="true"/>
+    </random_number>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="random" vClass="passenger" color="blue"/>
+    <vehicle id="randUni21093:1" type="random" depart="99.00" departPos="0.90" arrivalPos="0.16" arrivalSpeed="0.00">
+        <route edges="-72941690 794195698 794204739 794204740 794204751 794204755 794204756 794204757 794204758 794204759 794204760 794204761 794204741 794204742 794204743 794204744 794204745 794204746 794204747 794204748 794204749 794204750 794204752 794204753 794204754 794178025 794178024 794178023 794178022 794178017 794178007 794177996 794177985 794177974 794177973 794199812 794199813 794199814 794199815 794199816 794199817 794199818 794202452 794202453 29323720 61940313 794202240 217919304 217919303 794201676 794201675 794201679 794201677 794201678 231085412 794206827 794206828 794194650 69322899 794184337 794184336 794184335 794184334 794184333 794184332 794184331 794184330 794200385 794200386 794200387 794200388 794202835 794202836 794202842 794202843 794202844 794202845 794202846 794202847 794202848 794202849 794202837 794202850 794202851 794202862 794202863 794202864 794202865"/>
+    </vehicle>
+</routes>

@@ -1,0 +1,113 @@
+   <city>
+        <general
+            inhabitants="125657"
+            households="50000"
+            childrenAgeLimit="18"
+            retirementAgeLimit="65"
+            carRate="0.80"
+            unemploymentRate="0.05"
+            footDistanceLimit="350"
+            incomingTraffic="40000"
+            outgoingTraffic="12000"
+        />
+        <!-- source: http://census.cso.ie/areaprofiles/PDF/CTY/corkcity.pdf -->
+        <parameters
+            carPreference="0.95"
+            meanTimePerKmInCity="360"
+            freeTimeActivityRate="0.5"
+            uniformRandomTraffic="0.20"
+            departureVariation="120"
+        />
+        <population>
+            <!-- source: https://citypopulation.de/php/ireland-admin.php?adm2id=CC -->
+            <bracket beginAge="0" endAge="9" peopleNbr="12335" />
+            <bracket beginAge="10" endAge="19" peopleNbr="13531" />
+            <bracket beginAge="20" endAge="29" peopleNbr="24170" />
+            <bracket beginAge="30" endAge="39" peopleNbr="20391" />
+            <bracket beginAge="40" endAge="49" peopleNbr="14560" />
+            <bracket beginAge="50" endAge="59" peopleNbr="14707" />
+            <bracket beginAge="60" endAge="69" peopleNbr="11960" />
+            <bracket beginAge="70" endAge="79" peopleNbr="8950" />
+            <bracket beginAge="80" endAge="99" peopleNbr="5053" />
+        </population>
+
+        <workHours>
+            <!-- 
+            Hour value is number of seconds since 00:00, 
+            proportions are national average according to https://statbank.cso.ie/
+            Home / StatBank / Profile 6 - Commuting in Ireland / E6016
+            -->
+            <!-- 01:00 --><opening hour="3600" proportion="0.00"/><closing hour="3600" proportion="0.00"/>
+            <!-- 01:30 --><opening hour="5400" proportion="0.00"/><closing hour="5400" proportion="0.00"/>
+            <!-- 02:00 --><opening hour="7200" proportion="0.00"/><closing hour="7200" proportion="0.00"/>
+            <!-- 02:30 --><opening hour="9000" proportion="0.00"/><closing hour="9000" proportion="0.00"/>
+            <!-- 03:00 --><opening hour="10800" proportion="0.00"/><closing hour="10800" proportion="0.00"/>
+            <!-- 03:30 --><opening hour="12600" proportion="0.00"/><closing hour="12600" proportion="0.00"/>
+            <!-- 04:00 --><opening hour="14400" proportion="0.00"/><closing hour="14400" proportion="0.00"/>
+            <!-- 04:30 --><opening hour="16200" proportion="0.00"/><closing hour="16200" proportion="0.00"/>
+            <!-- 05:00 --><opening hour="18000" proportion="0.00"/><closing hour="18000" proportion="0.00"/>
+            <!-- 05:30 --><opening hour="19800" proportion="0.00"/><closing hour="19800" proportion="0.00"/>
+            <!-- 06:00 --><opening hour="21600" proportion="0.00"/><closing hour="21600" proportion="0.00"/>
+            <!-- 06:30 --><opening hour="23400" proportion="0.08"/><closing hour="23400" proportion="0.00"/>
+            <!-- 07:00 --><opening hour="25200" proportion="0.11"/><closing hour="25200" proportion="0.00"/>
+            <!-- 07:30 --><opening hour="27000" proportion="0.12"/><closing hour="27000" proportion="0.00"/>
+            <!-- 08:00 --><opening hour="28800" proportion="0.17"/><closing hour="28800" proportion="0.00"/>
+            <!-- 08:30 --><opening hour="30600" proportion="0.17"/><closing hour="30600" proportion="0.00"/>
+            <!-- 09:00 --><opening hour="32400" proportion="0.13"/><closing hour="32400" proportion="0.00"/>
+            <!-- 09:30 --><opening hour="34200" proportion="0.05"/><closing hour="34200" proportion="0.00"/>
+            <!-- 10:00 --><opening hour="36000" proportion="0.03"/><closing hour="36000" proportion="0.00"/>
+            <!-- 10:30 --><opening hour="37800" proportion="0.02"/><closing hour="37800" proportion="0.00"/>
+            <!-- 11:00 --><opening hour="39600" proportion="0.01"/><closing hour="39600" proportion="0.00"/>
+            <!-- 11:30 --><opening hour="41400" proportion="0.01"/><closing hour="41400" proportion="0.00"/>
+            <!-- 12:00 --><opening hour="43200" proportion="0.01"/><closing hour="43200" proportion="0.00"/>
+            <!-- 12:30 --><opening hour="45000" proportion="0.01"/><closing hour="45000" proportion="0.00"/>
+            <!-- 13:00 --><opening hour="46800" proportion="0.01"/><closing hour="46800" proportion="0.00"/>
+            <!-- 13:30 --><opening hour="48600" proportion="0.01"/><closing hour="48600" proportion="0.00"/>
+            <!-- 14:00 --><opening hour="50400" proportion="0.00"/><closing hour="50400" proportion="0.00"/>
+            <!-- 14:30 --><opening hour="52200" proportion="0.00"/><closing hour="52200" proportion="0.00"/>
+            <!-- 15:00 --><opening hour="54000" proportion="0.00"/><closing hour="54000" proportion="0.08"/>
+            <!-- 15:30 --><opening hour="55800" proportion="0.00"/><closing hour="55800" proportion="0.11"/>
+            <!-- 16:00 --><opening hour="57600" proportion="0.00"/><closing hour="57600" proportion="0.12"/>
+            <!-- 16:30 --><opening hour="59400" proportion="0.00"/><closing hour="59400" proportion="0.17"/>
+            <!-- 17:00 --><opening hour="61200" proportion="0.00"/><closing hour="61200" proportion="0.17"/>
+            <!-- 17:30 --><opening hour="63000" proportion="0.00"/><closing hour="63000" proportion="0.13"/>
+            <!-- 18:00 --><opening hour="64800" proportion="0.00"/><closing hour="64800" proportion="0.05"/>
+            <!-- 18:30 --><opening hour="66600" proportion="0.00"/><closing hour="66600" proportion="0.03"/>
+            <!-- 19:00 --><opening hour="68400" proportion="0.00"/><closing hour="68400" proportion="0.02"/>
+            <!-- 19:30 --><opening hour="70200" proportion="0.00"/><closing hour="70200" proportion="0.01"/>
+            <!-- 20:00 --><opening hour="72000" proportion="0.00"/><closing hour="72000" proportion="0.01"/>
+            <!-- 20:30 --><opening hour="73800" proportion="0.00"/><closing hour="73800" proportion="0.01"/>
+            <!-- 21:00 --><opening hour="75600" proportion="0.00"/><closing hour="75600" proportion="0.01"/>
+            <!-- 21:30 --><opening hour="77400" proportion="0.00"/><closing hour="77400" proportion="0.01"/>
+            <!-- 22:00 --><opening hour="79200" proportion="0.00"/><closing hour="79200" proportion="0.01"/>
+            <!-- 22:30 --><opening hour="81000" proportion="0.00"/><closing hour="81000" proportion="0.00"/>
+            <!-- 23:00 --><opening hour="82800" proportion="0.00"/><closing hour="82800" proportion="0.00"/>
+            <!-- 23:30 --><opening hour="84600" proportion="0.00"/><closing hour="84600" proportion="0.00"/>
+        </workHours>
+        <streets>
+            <street edge="794192337" population="30000" workPosition="10.0" />
+        </streets>
+        <!-- <cityGates>
+            <entrance edge="abc123" pos="243.67" incoming="1.5" outgoing="2.2"/>
+            <entrance edge="abc234" pos="0.00" incoming="1.0" outgoing="0.5"/>
+        </cityGates> -->
+        <!-- <schools>
+            <school edge="123abc" pos="23.0" beginAge="12" endAge="18" capacity="400" opening="32400" closing="64800" />
+        </schools> -->
+         <!-- <busLines>
+            <busLine id="601" maxTripDuration="3000">
+                <stations>
+                    <station refId="1" />
+                     ...
+                </stations>
+                <revStations>
+                    <station refId="2" />
+                     ...
+                </revStations>
+                <frequencies>
+                    <frequency begin="10000" end="25000" rate="1500" />
+                     ...
+                </frequencies>
+            </busLine>
+        </busLines> -->
+    </city>
