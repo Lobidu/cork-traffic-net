@@ -35,6 +35,7 @@ Execute the below command to open the network file in netedit:
 ```sh
 netedit network/network.net.xml
 ```
+Take some time to become familiar
 
 ## Notes and issues
 
